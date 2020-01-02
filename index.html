@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = divce- width, initial-scale = 1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie = edge">
+
+    <title>HW2</title>
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+        <header> 
+            <h1>Data Visualization HW2</h1> 
+        </header>
+        <div class = "mapping1">
+            <div class = "first">
+                <script type = "text/javascript" src="JavaScript/년도_꺾은선.js"></script>
+                <b>
+                    [년도별 교통사고 발생건수와 사상자수]
+                </b>
+            </div>
+            <div class = "second">                  
+            <script type = "text/javascript" src="JavaScript/년도_사상자_누적막대.js"></script>
+            <b>
+                [년도별 교통사고 사상자수 세부 구성]
+            </b>
+        </div>
+        </div>
+        <div class = "mapping2">
+            <div class = "third">
+                <script type = "text/javascript" src="JavaScript/유형_막대.js"></script>
+                <b>
+                        [사고유형별 발생건수]
+                    </b>
+            </div>
+            <div class = "fourth">
+                <script type = "text/javascript" src="JavaScript/년도_유형_꺾은선.js"></script>
+                <b>
+                        [사고유형별 년도에 따른 발생건수 추이]
+                </b>
+            </div>
+        </div>
+        <script>
+                function pie_interaction(){
+                    pie_interaction1();
+                    pie_interaction2();
+                    pie_interaction3();
+                    pie_interaction4();
+                    pie_interaction5();
+                }
+        </script>
+        
+        <div class = "main">
+            <script type = "text/javascript" src="JavaScript/사상자_유형_파이.js"></script>
+        </div>
+        <div class = "pie">
+            <div id = "check_box">
+                    <input type="checkbox" id = 'c1' onclick="pie_interaction()"><label for="c1">자전거</label>
+                    <br></br>
+                    <input type="checkbox" id = 'c2' onclick="pie_interaction()"><label for="c2">보행노인</label>
+                    <br></br>
+                    <input type="checkbox" id = 'c3' onclick="pie_interaction()"><label for="c3">무단횡단</label>
+                    <br></br>
+                    <input type="checkbox" id = 'c4' onclick="pie_interaction()"><label for="c4">보행어린이</label>
+                    <br></br>
+                    <input type="checkbox" id = 'c5' onclick="pie_interaction()"><label for="c5">스쿨존어린이</label>
+            </div>
+            <div class = "fifth">
+                <script type = "text/javascript" src="JavaScript/사상자_유형_파이_사상자수.js"></script>
+            </div>
+            <div class = "sixth">
+                <script type = "text/javascript" src="JavaScript/사상자_유형_파이_부상자수.js"></script>
+            </div>
+            <div class = "seventh">
+                <script type = "text/javascript" src="JavaScript/사상자_유형_파이_경상자수.js"></script>
+            </div>
+            <div class = "eighth">
+                <script type = "text/javascript" src="JavaScript/사상자_유형_파이_중상자수.js"></script>
+            </div>
+            <div class = "nineth">
+                <script type = "text/javascript" src="JavaScript/사상자_유형_파이_사망자수.js"></script>
+            </div>
+        </div>
+        <div id = "name_tag">        
+                <b>
+                    [사고유형별 교통사고 사상자수 세부 구성]
+                </b>
+            </div>
+        <div class = "tenth">
+            <script type = "text/javascript" src="JavaScript/년도_지역_점.js"></script>
+            <b>
+                [년도별 지역의 사상자 발생률 (사상자수/인구)]
+            </b>
+            <div id = "check_box2">
+                    <input type="checkbox" id = 's1' onclick="dot_interaction()"><label for="s1">2014년도</label>
+
+                    <input type="checkbox" id = 's2' onclick="dot_interaction()"><label for="s2">2015년도</label>
+
+                    <input type="checkbox" id = 's3' onclick="dot_interaction()"><label for="s3">2016년도</label>
+
+                    <input type="checkbox" id = 's4' onclick="dot_interaction()"><label for="s4">2017년도</label>
+
+                    <input type="checkbox" id = 's5' onclick="dot_interaction()"><label for="s5">2018년도</label>
+            </div>
+        </div>
+        
+</body>
+</html>

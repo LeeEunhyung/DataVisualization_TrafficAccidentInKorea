@@ -1,0 +1,125 @@
+
+header {
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#name_tag {
+    text-align: center;
+}
+
+.mapping1 {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    height: 350px;
+}
+
+.first {
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+
+.second {
+    margin: auto;
+    width: 900px;
+    height: 300px;
+    text-align: center;
+}
+
+.mapping2 {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 550px;
+}
+
+.third {
+    margin: auto;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+}
+
+.fourth {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.main {
+    margin: auto;
+    margin-top: 60px;
+    width: 1500px;
+    height: 60px;
+    text-align: center;
+}
+
+.pie {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1620px;
+    height: 300px;
+}
+
+.fifth {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.sixth {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.seventh {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.eighth {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.nineth {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.tenth {
+    display: auto;
+    margin: auto;
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+}
+
+#check_box {
+    display: auto;
+    margin-top: 50px;
+    width: 120px;
+    height: 300px;
+}
+
+#check_box2 {
+    width: 1000px;
+    height: 30px;
+}
