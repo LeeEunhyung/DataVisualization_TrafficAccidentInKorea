@@ -15,12 +15,12 @@
 
 ### 시각화 대상 및 데이터 전처리(mySQL) 정보
 - 년도별 교통사고 발생건수와 사상자수
-  ```
+  ```SQL
   SELECT 사고년도, SUM(발생건수), SUM(사상자수) FROM accident GROUP BY 사고년도;
   ```
   
 - 년도별 교통사고 사상자수 세부 구성
-  ```
+  ```SQL
   SELECT 사고년도, SUM(부상자수) FROM accident GROUP BY 사고년도;
   SELECT 사고년도, SUM(경상자수) FROM accident GROUP BY 사고년도;
   SELECT 사고년도, SUM(중상자수) FROM accident GROUP BY 사고년도;
@@ -28,22 +28,22 @@
   ```
   
 - 사고유형별 발생건수 (2012년도 ~ 2018년도)
-  ```
+  ```SQL
   SELECT 사고유형구분, SUM(발생건수) FROM accident GROUP BY 사고유형구분;
   ```
   
 - 년도별 교통사고 발생건수와 사상자수
-  ```
+  ```SQL
   SELECT 사고년도, 사고유형구분, 사고유형, SUM(발생건수) FROM accident GROUP BY 사고년도, 사고유형구분;
   ```
   
 - 사고유형별 교통사고 세부 구성 (2012년도 ~ 2018년도)
-  ```
+  ```SQL
   SELECT 사고유형구분, SUM(사상자수), SUM(부상자수), SUM(경상자수), SUM(중상자수), SUM(사망자수) FROM accident GROUP BY 사고유형구분;
   ```
   
 - 년도별 지역의 사상자 발생률 (2014년도 ~ 2018년도)
-  ```
+  ```SQL
   SELECT SUM(a.사상자수)/b.2014년도 FROM accident a INNER JOIN population b ON a.도시명 = 지역 WHERE 사고년도 = 2014;
   SELECT SUM(a.사상자수)/b.2015년도 FROM accident a INNER JOIN population b ON a.도시명 = 지역 WHERE 사고년도 = 2015;
   SELECT SUM(a.사상자수)/b.2016년도 FROM accident a INNER JOIN population b ON a.도시명 = 지역 WHERE 사고년도 = 2016;
