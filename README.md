@@ -1,4 +1,4 @@
-# TrafficAccidentInKorea_DataVisualization
+# DataVisualization_TrafficAccidentInKorea
 - 데이터시각화 HW2 - d3.js를 활용한 한국 교통사고 데이터 시각화
   https://leeeunhyung.github.io/TrafficAccidentInKorea_DataVisualization/
 
